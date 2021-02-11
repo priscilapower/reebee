@@ -1,4 +1,4 @@
-../.idea
+.idea
 reebee/composer.lock
 reebee/vendor
 .phpunit.result.cache
