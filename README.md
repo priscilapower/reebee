@@ -23,9 +23,9 @@ http://localhost:8080
 
 **To execute the methods POST, PUT and DELETE, you must use Basic Authentication with a pre-created user.**
 
-####User
+#### User
 
-#####POST
+##### POST
 
 `POST /user`
 
@@ -47,8 +47,8 @@ Body:
 The field "name" is not required.
 
 
-####Flyer
-#####GET
+#### Flyer
+##### GET
 ```
 GET /flyer
 ```
@@ -59,7 +59,7 @@ GET /flyer/:id
 ```
 Returns the flyer equivalent to the id.
 
-#####POST
+##### POST
 ```
 POST /flyer
 ```
@@ -82,7 +82,7 @@ Body:
 ```
 All fields are required.
 
-#####PUT
+##### PUT
 ```
 PUT /flyer/:id
 ```
@@ -105,7 +105,7 @@ Body:
 ```
 All fields are required.
 
-#####DELETE
+##### DELETE
 ```
 DELETE /flyer/:id
 ```
@@ -117,8 +117,8 @@ Basic Authentication
 ```
 
 
-####Page
-#####GET
+#### Page
+##### GET
 ```
 GET /page/:id
 ```
@@ -129,7 +129,7 @@ GET /page/flyer/:id
 ```
 Returns all the pages for the flyerId specified ordered by pageNumber.
 
-#####POST
+##### POST
 ```
 POST /page
 ```
@@ -151,7 +151,7 @@ Body:
 ```
 All fields are required.
 
-#####PUT
+##### PUT
 ```
 PUT /page/:id
 ```
@@ -173,7 +173,7 @@ Body:
 ```
 All fields are required.
 
-#####DELETE
+##### DELETE
 ```
 DELETE /page/:id
 ```
