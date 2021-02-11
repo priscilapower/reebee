@@ -5,13 +5,13 @@ This is an API for manage Flyers and Pages, through users, using the stack with 
 
 
 ### Getting Started
-The first step is to create and run the development environment by running the following command from this directory:
+The first step is to create the development environment by running the following command from this directory:
 
 ```
-docker-compose -f docker/docker-compose.yml --env-file docker/sample.env up --build
+docker-compose -f docker/docker-compose.yml --env-file docker/.env up --build
 ```
 
-This command will start our service, and the API will be available on the host:
+This command will start the service, and the API will be available on the host:
 
 ```
 http://localhost:8080
@@ -21,10 +21,12 @@ http://localhost:8080
 
 ### Routes:
 
-**To execute the methods POST, PUT and DELETE, you must use Basic Authentication with a created user**
+**To execute the methods POST, PUT and DELETE, you must use Basic Authentication with a pre-created user.**
 
 ####User
+
 #####POST
+
 `POST /user`
 
 Creates a new user.
@@ -78,6 +80,7 @@ Body:
     "pageCount": 2
 }
 ```
+All fields are required.
 
 #####PUT
 ```
@@ -100,6 +103,7 @@ Body:
     "pageCount": 3
 }
 ```
+All fields are required.
 
 #####DELETE
 ```
@@ -145,6 +149,7 @@ Body:
     "flyerId": 1
 }
 ```
+All fields are required.
 
 #####PUT
 ```
@@ -166,6 +171,7 @@ Body:
     "flyerId": 1
 }
 ```
+All fields are required.
 
 #####DELETE
 ```
