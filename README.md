@@ -11,7 +11,14 @@ The first step is to create the development environment by running the following
 docker-compose -f docker/docker-compose.yml --env-file docker/.env up --build
 ```
 
-This command will start the service, and the API will be available on the host:
+Then, install the dependencies:
+
+```
+cd reebee && composer install
+```
+
+
+Now the service is ready, and the API will be available on the host:
 
 ```
 http://localhost:8080
